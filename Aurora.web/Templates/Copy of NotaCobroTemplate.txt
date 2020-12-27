@@ -1,0 +1,79 @@
+﻿<table bordercolor="#000000" cellpadding="0" cellspacing="0" width="595px" heigh="842px" border="1" align="center"> 
+<tr>
+<td colspan="4" bordercolor="#FFFFFF">ASOCIACION PROPIETARIOS LA AURORA DE CURACAVI</td>
+</tr><tr><td width="100" bordercolor="#FFFFFF">RUT: 72.117.900-1</td>
+<td colspan="3" bordercolor="#FFFFFF">&nbsp;</td>
+</tr><tr> <td colspan="4" align="center" bordercolor="#FFFFFF">&nbsp;</td>
+</tr><tr><td colspan="4" align="center" bordercolor="#FFFFFF"><strong>NOTA COBRO RECUPERACION DE GASTOS - MES DE <@MES> &nbsp;<@ANO></strong></td>
+</tr>
+<td bordercolor="#FFFFFF">&nbsp;</td>
+<td colspan="3" bordercolor="#FFFFFF">&nbsp;</td>
+</tr>
+<tr> 
+<td bordercolor="#FFFFFF">CODIGO ASOCIADO</td> 
+<td colspan="3" bordercolor="#FFFFFF"><@CODIGOASOCIADO></td> 
+</tr> 
+<tr> 
+<td bordercolor="#FFFFFF">NOMBRE</td> 
+<td colspan="3" bordercolor="#FFFFFF"><@NOMBRE></td> 
+</tr> 
+<tr> 
+<td bordercolor="#FFFFFF">RUT</td> 
+<td colspan="3" bordercolor="#FFFFFF"><@RUT></td> 
+</tr> 
+<tr> 
+<td bordercolor="#FFFFFF">PARCELA</td> 
+<td colspan="3" bordercolor="#FFFFFF"><@PARCELA></td> 
+</tr> 
+<tr> 
+<td bordercolor="#FFFFFF">DIRECCION ENVIO </td> 
+<td colspan="3" bordercolor="#FFFFFF"><@EMAIL></td> 
+</tr> 
+<tr> 
+<td bordercolor="#FFFFFF">&nbsp;</td>
+<td colspan="3" bordercolor="#FFFFFF">&nbsp;</td> 
+</tr> 
+<tr> 
+<td bordercolor="#FFFFFF"><strong>RECUPERACION DE GASTOS</strong></td> 
+<td colspan="3" bordercolor="#FFFFFF">&nbsp;</td>
+</tr> 
+<tr>
+<td bordercolor="#FFFFFF">&nbsp;</td> 
+<td colspan="3" bordercolor="#FFFFFF">&nbsp;</td> 
+</tr> 
+<tr> 
+<td bordercolor="#FFFFFF"><strong>MONTO TOTAL: </strong></td>
+<td bordercolor="#FFFFFF"><div align="right"><strong>$<@MONTOTAL></strong></div></td> 
+<td colspan="2" bordercolor="#FFFFFF">&nbsp;</td> 
+</tr> 
+<tr> 
+<td bordercolor="#FFFFFF">&nbsp;</td> 
+<td colspan="3" bordercolor="#FFFFFF">&nbsp;</td> 
+</tr> 
+<tr bordercolor="#FFFFFF"> 
+<td bordercolor="#FFFFFF"><strong>DESGLOSE:</strong></td>
+<td colspan="3" bordercolor="#FFFFFF">&nbsp;</td>
+</tr> 
+<tr> 
+<td bordercolor="#FFFFFF">&nbsp;</td> 
+<td colspan="3" bordercolor="#FFFFFF">&nbsp;</td> 
+</tr> 
+<tr> 
+<td colspan="4" bordercolor="#FFFFFF"><@CUENTASVARIABLES></td> 
+</tr> 
+<tr>
+<td colspan="4" bordercolor="#FFFFFF">&nbsp;</td> 
+</tr> 
+<tr> 
+<td colspan="4" bordercolor="#FFFFFF"><@CUENTASFIJAS></td> 
+</tr> 
+<tr> 
+<td colspan="4" bordercolor="#FFFFFF"><@CUENTASFIJASOTROSGASTOS></td>
+</tr> 
+<tr> 
+<td colspan="4" bordercolor="#FFFFFF">&nbsp;</td> 
+</tr> 
+<tr> 
+<td colspan="4" bordercolor="#FFFFFF"><@CUENTASESPECIALES></td> 
+</tr> 
+</table>

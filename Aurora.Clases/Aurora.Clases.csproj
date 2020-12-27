@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{56FEE08F-7345-4C60-B166-C4A837B2A907}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aurora.Clases</RootNamespace>
+    <AssemblyName>Aurora.Clases</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v8.3, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v8.3, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\Adicional.cs" />
+    <Compile Include="Base\Codificacion.cs" />
+    <Compile Include="Base\Enums.cs" />
+    <Compile Include="Base\InfoMensaje.cs" />
+    <Compile Include="Base\InfoValidacion.cs" />
+    <Compile Include="Base\Rijndael.cs" />
+    <Compile Include="Base\Utiles.cs" />
+    <Compile Include="Datos\BaseDatos.cs" />
+    <Compile Include="Datos\CambioMedidor.cs" />
+    <Compile Include="Datos\Cheque.cs" />
+    <Compile Include="Datos\CtePropietario.cs" />
+    <Compile Include="Datos\CuentaEspecial.cs" />
+    <Compile Include="Datos\CuentaFija.cs" />
+    <Compile Include="Datos\CuentaVariable.cs" />
+    <Compile Include="Datos\Feriado.cs" />
+    <Compile Include="Datos\Folio.cs" />
+    <Compile Include="Datos\GastosCE.cs" />
+    <Compile Include="Datos\GastosCF.cs" />
+    <Compile Include="Datos\GastosCV.cs" />
+    <Compile Include="Datos\GastosResumen.cs" />
+    <Compile Include="Datos\HistorialPagoCuenta.cs" />
+    <Compile Include="Datos\Nomina.cs" />
+    <Compile Include="Datos\PAlmacenados.cs" />
+    <Compile Include="Datos\Propietario.cs" />
+    <Compile Include="Datos\UF.cs" />
+    <Compile Include="Datos\Usuario.cs" />
+    <Compile Include="Entidad\InfoFeriado.cs" />
+    <Compile Include="Entidad\InfoHistorialPagos.cs" />
+    <Compile Include="Entidad\InfoCheque.cs" />
+    <Compile Include="Entidad\InfoExcepciones.cs" />
+    <Compile Include="Entidad\InfoGastosCV.cs" />
+    <Compile Include="Entidad\InfoGastosCFDeuda.cs" />
+    <Compile Include="Entidad\InfoCambioMedidor.cs" />
+    <Compile Include="Entidad\InfoCtePropietario.cs" />
+    <Compile Include="Entidad\InfoCuentaEspecial.cs" />
+    <Compile Include="Entidad\InfoCuentaFija.cs" />
+    <Compile Include="Entidad\InfoCuentaFijaPropietario.cs" />
+    <Compile Include="Entidad\InfoCuentaVariable.cs" />
+    <Compile Include="Entidad\InfoCuentaVarPropietario.cs" />
+    <Compile Include="Entidad\InfoGastosCE.cs" />
+    <Compile Include="Entidad\InfoGastosCF.cs" />
+    <Compile Include="Entidad\InfoGastosCVDeuda.cs" />
+    <Compile Include="Entidad\InfoGastosResumen.cs" />
+    <Compile Include="Entidad\InfoItem.cs" />
+    <Compile Include="Entidad\InfoNomina.cs" />
+    <Compile Include="Entidad\InfoPagoSimple.cs" />
+    <Compile Include="Entidad\InfoPropietario.cs" />
+    <Compile Include="Entidad\InfoUF.cs" />
+    <Compile Include="Entidad\InfoUsuario.cs" />
+    <Compile Include="Negocio\CambioMedidor.cs" />
+    <Compile Include="Negocio\Cheque.cs" />
+    <Compile Include="Negocio\CtePropietario.cs" />
+    <Compile Include="Negocio\CuentaEspecial.cs" />
+    <Compile Include="Negocio\CuentaFija.cs" />
+    <Compile Include="Negocio\CuentaVariable.cs" />
+    <Compile Include="Negocio\Feriado.cs" />
+    <Compile Include="Negocio\Folio.cs" />
+    <Compile Include="Negocio\GastosCE.cs" />
+    <Compile Include="Negocio\GastosCF.cs" />
+    <Compile Include="Negocio\GastosCV.cs" />
+    <Compile Include="Negocio\GastosResumen.cs" />
+    <Compile Include="Negocio\Nomina.cs" />
+    <Compile Include="Negocio\NumeroToTexto.cs" />
+    <Compile Include="Negocio\Propietario.cs" />
+    <Compile Include="Negocio\UF.cs" />
+    <Compile Include="Negocio\Usuario.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mainmenu>
+  <item Text="Inicio" Selected="True" NavigateUrl="~/Escritorio/Administracion.aspx"/>
+  <item Text="Administración">
+    
+    <item Text="Propietarios" NavigateUrl="~/Admin/AdminPropietarios.aspx" />
+    
+  </item>
+  <item Text="Cuentas corrientes" />
+</mainmenu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mainmenu>
+  <item Text="Inicio" Selected="True" NavigateUrl="~/Escritorio/Administracion.aspx"/>
+  <item Text="Administración">
+   <item Text="Usuarios" NavigateUrl="~/Admin/AdminUsuarios.aspx" />
+   <item Text="Unidad de Fomento(UF)" NavigateUrl="~/Admin/AdminUF.aspx" />
+   <item Text="Cuentas fijas" NavigateUrl="~/Admin/AdminCuentasFijas.aspx" />
+   <item Text="Cuentas variables" NavigateUrl="~/Admin/AdminCuentasVariables.aspx" />
+   <!--<item Text="Cuentas especiales" NavigateUrl="~/Admin/AdminCuentasEspeciales.aspx" />-->
+   <item Text="Feriados" NavigateUrl="~/Admin/AdminFeriados.aspx" />
+   <item Text="Mensajes de Notas de Cobro" NavigateUrl="~/Admin/MensajesNota.aspx" />
+  </item>
+  <item Text="Propietarios" >
+    <item Text="Propietarios, cuentas cte. y especiales" NavigateUrl="~/Admin/AdminPropietarios.aspx" />
+    <item Text="Ingreso de lecturas" NavigateUrl="~/Admin/IngresoLecturas.aspx" />
+    <item Text="Especificar cambios de medidores" NavigateUrl="~/Admin/CambioMedidor.aspx" />
+    <item Text="Administrar Deudas Anteriores y Saldo C.cte" NavigateUrl="~/Admin/AdminDeudasAntigua.aspx" />
+    <item Text="Morosos" NavigateUrl="~/Admin/AdminPropietariosMorosos.aspx" />
+    <item Text="Gestión de Cheques" NavigateUrl="~/Admin/AdminCheques.aspx" />
+    <item Text="Notas de cobro e Ingreso Mensual por mes (Excel)" NavigateUrl="~/Admin/CartolaIngresoMensual.aspx" />
+    <item Text="Reporte Consumo" NavigateUrl="~/Admin/ReporteConsumo.aspx" />
+
+  </item>
+  <item Text="Generación de cobranza" >
+    <item Text="Generar nómina de cobro" NavigateUrl="~/Admin/GenerarNomina.aspx" />
+    <item Text="Enviar correos y notas de cobros" NavigateUrl="~/Admin/EnviarCorreos.aspx" />
+    <!--<item Text="Enviar correos y notas de cobros" NavigateUrl="~/Admin/SendEmail.aspx" />-->
+  </item>
+  <item Text="Contabilidad" >
+    <item Text="Deudas Vigentes " NavigateUrl="~/Admin/CartolaContabilidad.aspx" />
+    
+  </item>
+</mainmenu>

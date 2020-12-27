@@ -1,0 +1,43 @@
+﻿<table width="100%" style="border-color:#000000; azimuth:center;font-size:xx-small; border-spacing:inherit ;border-collapse:collapse; border-style:solid; width:100%; border-width:1px; margin-left: auto; margin-right: auto"> 
+<tr> 
+<td width="9%" style=" border-width:1px; border-style:solid; border-color:#000000; margin-left: auto; margin-right: auto"><strong>CONCEPTO</strong></td> 
+<td width="8%" style=" border-width:1px; border-style:solid; border-color:#000000; margin-left: auto; margin-right: auto"><strong>NUMERO<br/>
+  MEDIDOR</strong></td> 
+<td width="8%" style=" border-width:1px; border-style:solid; border-color:#000000; margin-left: auto; margin-right: auto"><strong>LECTURA <br/> 
+  ANTERIOR</strong></td> 
+<td width="8%" style=" border-width:1px; border-style:solid; border-color:#000000; margin-left: auto; margin-right: auto"><strong>LECTURA<br/>
+  ACTUAL</strong></td> 
+<td width="9%" style=" border-width:1px; border-style:solid; border-color:#000000; margin-left: auto; margin-right: auto"><strong>CONSUMO<br/>
+  (kwh)</strong></td> 
+<td width="8%" style=" border-width:1px; border-style:solid; border-color:#000000; margin-left: auto; margin-right: auto"><strong>FECHA <br/> 
+  LECTURA.</strong></td> 
+<td width="8%" style=" border-width:1px; border-style:solid; border-color:#000000; margin-left: auto; margin-right: auto"><strong>VALOR<br/>
+  UNITARIO</strong></td> 
+<td width="6%" style=" border-width:1px; border-style:solid; border-color:#000000; margin-left: auto; margin-right: auto"><strong>VALOR (UF) <br/>
+  </strong></td> 
+<td width="7%" style=" border-width:1px; border-style:solid; border-color:#000000; margin-left: auto; margin-right: auto"><strong>CARGO<br/>
+  MES</strong></td> 
+<td width="9%" style=" border-width:1px; border-style:solid; border-color:#000000; margin-left: auto; margin-right: auto"><strong>CONSUMO<br/>
+  IMPAGO</strong></td> 
+<td width="8%" style=" border-width:1px; border-style:solid; border-color:#000000; margin-left: auto; margin-right: auto"><strong>TOTAL<br/>
+  A PAGAR </strong></td> 
+<td width="12%" style=" border-width:1px; border-style:solid; border-color:#000000; margin-left: auto; margin-right: auto"><strong>FECHA<br/>CORTE</strong></td> 
+</tr> 
+<tr> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000; margin-left: auto; margin-right: auto" colspan="12"></td> 
+</tr> 
+<tr> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto"><@TIPO></td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto"><@MED></td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto"><div align="right"><@LANT></div></td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto"><div align="right"><@LACT></div></td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto"><div align="right"><@CONSUMO></div></td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto"><@FECHALEC></td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto"><div align="right"><@PUNITARIO></div></td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto"><div align="right"><@MONTOFIJO></div></td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto"><div align="right"><@CARGOMES></div></td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto"><div align="right"><@DEUDA></div></td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto"><div align="right"><@TOTAL></div></td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto"><@FECHACORTE></td> 
+</tr> 
+</table>

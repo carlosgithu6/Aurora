@@ -1,0 +1,185 @@
+﻿<table style="width:95% border-color:#000000; border-style:solid; font-size:17px; border-width:1px; margin-left: auto; margin-right: auto" align="center"> 
+<tr>
+<td  colspan="4" style="border-color:#FFFFFF">ASOCIACION PROPIETARIOS LA AURORA DE CURACAVI</td>
+</tr><tr>
+  <td style="width:'100' border-color:#FFFFFF">RUT: 72.117.900-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+  <td colspan="3" style="border-color:#FFFFFF">&nbsp;</td>
+</tr>
+<tr>
+  <td colspan="4" style="align:'center' border-color:#FFFFFF">TELEFONO:22 835 5068</td>
+</tr>
+<tr> <td colspan="4" style="align:'center' border-color:#FFFFFF">&nbsp;</td>
+</tr><tr><td colspan="4" style="align:'center' border-color:#FFFFFF"><strong>NOTA COBRO RECUPERACION DE GASTOS - MES DE <@MES> &nbsp;<@ANO></strong></td>
+</tr>
+<tr>
+<td style="border-color:#FFFFFF">&nbsp;</td>
+<td colspan="3" style="border-color:#FFFFFF">&nbsp;</td>
+</tr>
+<tr> 
+<td style="border-color:#FFFFFF">CODIGO PROPIEDAD</td> 
+<td colspan="3" style="border-color:#FFFFFF"><@CODIGOASOCIADO></td> 
+</tr> 
+<tr> 
+<td style="border-color:#FFFFFF">NOMBRE</td> 
+<td colspan="3" style="border-color:#FFFFFF"><@NOMBRE></td> 
+</tr> 
+<tr> 
+<td style="border-color:#FFFFFF">RUT</td> 
+<td colspan="3" style="border-color:#FFFFFF"><@RUT></td> 
+</tr> 
+<tr> 
+<td style="border-color:#FFFFFF">PARCELA</td> 
+<td colspan="3" style="border-color:#FFFFFF"><@PARCELA></td> 
+</tr> 
+<tr> 
+<td style="border-color:#FFFFFF">DIRECCION ENVIO </td> 
+<td colspan="3" style="border-color:#FFFFFF"><@EMAIL></td> 
+</tr> 
+<tr> 
+<td style="border-color:#FFFFFF">ES SOCIO </td> 
+<td colspan="3" style="border-color:#FFFFFF"><@ESSOCIO></td> 
+</tr> 
+<tr> 
+<td style="border-color:#FFFFFF">SALDO A FAVOR </td> 
+<td colspan="3" style="border-color:#FFFFFF"><strong><@SALDOCTACTE></strong></td> 
+</tr> 
+<tr> 
+<td style="border-color:#FFFFFF">&nbsp;</td>
+<td colspan="3" style="border-color:#FFFFFF">&nbsp;</td> 
+</tr> 
+<tr> 
+<td style="border-color:#FFFFFF"><strong>RECUPERACION DE GASTOS</strong></td> 
+<td colspan="3" style="border-color:#FFFFFF">&nbsp;</td>
+</tr> 
+<tr>
+<td style="border-color:#FFFFFF">&nbsp;</td> 
+<td colspan="3" style="border-color:#FFFFFF">&nbsp;</td> 
+</tr> 
+<tr> 
+<td style="border-color:#FFFFFF"><strong>MONTO TOTAL: </strong></td>
+<td style="border-color:#FFFFFF"><div style="align:'right'"><strong>$<@MONTOTAL></strong></div></td> 
+<td colspan="2" style="border-color:#FFFFFF">&nbsp;</td> 
+</tr> 
+<tr> 
+<td style="border-color:#FFFFFF">&nbsp;</td> 
+<td colspan="3" style="border-color:#FFFFFF">&nbsp;</td> 
+</tr> 
+<tr style="border-color:#FFFFFF"> 
+<td style="border-color:#FFFFFF"><strong>DESGLOSE:</strong></td>
+<td colspan="3" style="border-color:#FFFFFF">&nbsp;</td>
+</tr> 
+<tr> 
+<td style="border-color:#FFFFFF">&nbsp;</td> 
+<td colspan="3" style="border-color:#FFFFFF">&nbsp;</td> 
+</tr> 
+<tr align="center"> 
+<td colspan="4" style="border-color:#FFFFFF;border-width:0px; margin-left:auto; margin-right:auto"><@CUENTASVARIABLES></td> 
+</tr> 
+<tr>
+<td colspan="4" style="border-color:#FFFFFF">&nbsp;</td> 
+</tr> 
+<tr> 
+<td colspan="4" style="border-color:#FFFFFF;border-width:0px; margin-left:auto; margin-right:auto"><@CUENTASFIJAS></td> 
+</tr> 
+<tr> 
+<td colspan="4" style="border-color:#FFFFFF"><@CUENTASFIJASOTROSGASTOS></td>
+</tr> 
+<tr> 
+<td colspan="4" style="border-color:#FFFFFF">&nbsp;</td> 
+</tr> 
+<tr> 
+<td colspan="4" style="border-color:#FFFFFF"><@CUENTASESPECIALES></td> 
+</tr>
+<tr>
+<td colspan="4" style="border-color:#FFFFFF; align:right;border:1px"> 
+<table width="100%"  border="0" bordercolor="#000000">
+  <tr>
+    <td style="border-width:1px;border-style:solid; border-color:#000000; margin-left:auto; margin-right:auto;font-size:12px"><b>DEUDA INICIAL:</b> $<@DEUDAINICIAL></td>
+  </tr>
+</table>
+</td> 
+</tr>  
+<tr align="center"> 
+<td colspan="4" style="border-color:#FFFFFF; font-size:16px">
+<strong>TOTAL RECUPERACION DE GASTOS  A PAGAR &nbsp; <@MES> &nbsp;<@ANO>:&nbsp; $<@MONTOTAL></strong>
+</td> 
+</tr> 
+<tr align="center"> 
+<td colspan="4" style="border-color:#FFFFFF; font-size:16px">&nbsp;
+    
+</td> 
+</tr> 
+<tr align="center"> 
+<td colspan="4" style="border-color:#FFFFFF; font-size:16px">
+
+<strong> FECHA DE VENCIMIENTO: <@FECHAVENC></strong>
+</td> 
+</tr> 
+<tr align="center"> 
+<td colspan="4" style="border-color:#FFFFFF; font-size:16px">&nbsp;
+    
+</td> 
+</tr> 
+<tr align="center"><td colspan="4" style="border-color:#FFFFFF; font-size:14px"><strong>Le solicitamos acercarse a la administración a los efectos de regularizar su deuda</strong></td></tr> 
+<tr align="center"> 
+<td colspan="4" style="border-color:#FFFFFF; font-size:16px">&nbsp;
+    
+</td> 
+</tr> 
+<tr> 
+<td colspan="4" style="border-color:#FFFFFF; font-size:16px">
+ Nota: Total a pagar es el total de recuperación de gastos  correspondientes al propietario. No se permiten pagos  por item de gasto.
+</td> 
+</tr> 
+<tr align="center"> 
+<td colspan="4" style="border-color:#FFFFFF; font-size:16px"><strong>PROVISION PARA INVERSION POR SOBRECONSUMO</strong>
+<table width="100%" style="border-color:#000000; azimuth:center;font-size:xx-small; border-spacing:inherit ;border-collapse:collapse; border-style:solid; width:70%; border-width:1px; margin-left: auto; margin-right: auto"> 
+<tr> 
+<td width="9%" style=" border-width:1px; border-style:solid; border-color:#000000; margin-left: auto; margin-right: auto"><strong>Tramos consumo agua</strong></td> 
+<td width="8%" style=" border-width:1px; border-style:solid; border-color:#000000; margin-left: auto; margin-right: auto"><strong>%Reembolso</strong></td> 
+<td width="8%" style=" border-width:1px; border-style:solid; border-color:#000000; margin-left: auto; margin-right: auto"><strong>Tarifa aplicada </strong></td> 
+</tr> 
+<tr> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000; margin-left: auto; margin-right: auto" colspan="12"></td> 
+</tr> 
+<tr> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto">Consumo hasta 200 M3</td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto">0</td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto"><div align="center"><@tramo1></div></td> 
+
+</tr> 
+<tr> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto">Consumo 201 hasta 300 M3</td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto">25%</td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto"><div align="center"><@tramo2></div></td> 
+
+</tr> 
+<tr> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto">Consumo 301 hasta 500 M3</td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto">50%</td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto"><div align="center"><@tramo3></div></td> 
+
+</tr> 
+<tr> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto">Consumo 501 en adelante</td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto">100%</td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto"><div align="center"><@tramo4></div></td> 
+
+</tr> 
+<tr> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto">Consumo M&iacute;nimo 0</td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto">10 M3 </td> 
+<td style=" border-width:1px; border-style:solid; border-color:#000000;margin-left: auto; margin-right: auto"><div align="center"><@tramo0></div></td> 
+
+</tr> 
+</table>
+
+</td> 
+</tr> 
+<tr align="center"> 
+<td colspan="4" style="border-color:#FFFFFF; font-size:16px">&nbsp;
+    
+</td> 
+</tr> 
+<@MENSAJE>
+</table>

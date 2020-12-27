@@ -1,0 +1,1276 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3873EAAA-6BDE-4411-B8A4-2587B3512DAC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aurora.Web</RootNamespace>
+    <AssemblyName>Aurora.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aurora.Clases, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Aurora.Clases\bin\Release\Aurora.Clases.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v8.3.Core, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v8.3, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v8.3, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxEditors.v8.3, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxGridView.v8.3, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxGridView.v8.3.Export, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v8.3, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v8.3.Export, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WINDOWS\assembly\GAC_MSIL\DevExpress.Web.ASPxPivotGrid.v8.3.Export\8.3.4.0__b88d1754d700e49a\DevExpress.Web.ASPxPivotGrid.v8.3.Export.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxScheduler.v8.3, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v8.3, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v8.3, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v8.3, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v8.3, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v8.3.Core, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v8.3, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v8.3, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v8.3.Web, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v8.3.Core, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Aurora.Clases\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\GreenLeaf\Web\rpBottomRightCorner.png" />
+    <Content Include="App_Themes\GreenLeaf\Web\rpTopLeftCorner.png" />
+    <Content Include="App_Themes\GreenLeaf\Web\styles.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Imagenes\1downarrow.ico" />
+    <Content Include="Imagenes\1leftarrow.ico" />
+    <Content Include="Imagenes\1rightarrow.ico" />
+    <Content Include="Imagenes\1uparrow.ico" />
+    <Content Include="Imagenes\2downarrow.ico" />
+    <Content Include="Imagenes\2leftarrow.ico" />
+    <Content Include="Imagenes\2rightarrow.ico" />
+    <Content Include="Imagenes\2uparrow.ico" />
+    <Content Include="Imagenes\back.ico" />
+    <Content Include="Imagenes\button_cancel.ico" />
+    <Content Include="Imagenes\button_ok.ico" />
+    <Content Include="Imagenes\clean.ico" />
+    <Content Include="Imagenes\database.ico" />
+    <Content Include="Imagenes\db_add.ico" />
+    <Content Include="Imagenes\db_comit.ico" />
+    <Content Include="Imagenes\db_remove.ico" />
+    <Content Include="Imagenes\db_status.ico" />
+    <Content Include="Imagenes\db_update.ico" />
+    <Content Include="Imagenes\decrypted.ico" />
+    <Content Include="Imagenes\down.ico" />
+    <Content Include="Imagenes\editcut.ico" />
+    <Content Include="Imagenes\editdelete.ico" />
+    <Content Include="Imagenes\editpaste.ico" />
+    <Content Include="Imagenes\edit_add.ico" />
+    <Content Include="Imagenes\edit_remove.ico" />
+    <Content Include="Imagenes\error.ico" />
+    <Content Include="Imagenes\exit.ico" />
+    <Content Include="Imagenes\find.ico" />
+    <Content Include="Imagenes\forward.ico" />
+    <Content Include="Imagenes\gohome.ico" />
+    <Content Include="Imagenes\info.ico" />
+    <Content Include="Imagenes\kuser.ico" />
+    <Content Include="Imagenes\lock.ico" />
+    <Content Include="Imagenes\Login Manager.ico" />
+    <Content Include="Imagenes\logout.ico" />
+    <Content Include="Imagenes\quick_restart.ico" />
+    <Content Include="Imagenes\reload.ico" />
+    <Content Include="Imagenes\restart.ico" />
+    <Content Include="Imagenes\run.ico" />
+    <Content Include="Imagenes\seyon.ico" />
+    <Content Include="Imagenes\share.ico" />
+    <Content Include="Imagenes\shutdown.ico" />
+    <Content Include="Imagenes\stop.ico" />
+    <Content Include="Imagenes\tab.ico" />
+    <Content Include="Imagenes\tab_new.ico" />
+    <Content Include="Imagenes\tab_remove.ico" />
+    <Content Include="Imagenes\up.ico" />
+    <Content Include="Imagenes\viewmag+.ico" />
+    <Content Include="Imagenes\viewmag-.ico" />
+    <Content Include="Imagenes\viewmag.ico" />
+    <Content Include="Imagenes\viewmag1.ico" />
+    <Content Include="Imagenes\viewmagfit.ico" />
+    <Content Include="Imagenes\view_bottom.ico" />
+    <Content Include="Imagenes\view_choose.ico" />
+    <Content Include="Imagenes\view_detailed.ico" />
+    <Content Include="Imagenes\view_left_right.ico" />
+    <Content Include="Imagenes\view_multicolumn.ico" />
+    <Content Include="Imagenes\view_remove 2.ico" />
+    <Content Include="Imagenes\view_remove.ico" />
+    <Content Include="Imagenes\view_right.ico" />
+    <Content Include="Imagenes\view_text.ico" />
+    <Content Include="Imagenes\view_top_bottom.ico" />
+    <Content Include="Imagenes\view_tree.ico" />
+    <Content Include="Imagenes\window_fullscreen.ico" />
+    <Content Include="Imagenes\window_new.ico" />
+    <Content Include="Imagenes\window_nofullscreen.ico" />
+    <Content Include="Images\ASPxRoundPanel\655510495\BottomLeftCorner.png" />
+    <Content Include="Images\ASPxRoundPanel\655510495\BottomRightCorner.png" />
+    <Content Include="Images\ASPxRoundPanel\655510495\NoHeaderTopLeftCorner.png" />
+    <Content Include="Images\ASPxRoundPanel\655510495\NoHeaderTopRightCorner.png" />
+    <Content Include="Images\ASPxRoundPanel\655510495\TopLeftCorner.png" />
+    <Content Include="Images\ASPxRoundPanel\655510495\TopRightCorner.png" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\ActualizaGastosMensuales.aspx.cs">
+      <DependentUpon>ActualizaGastosMensuales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ActualizaGastosMensuales.aspx.designer.cs">
+      <DependentUpon>ActualizaGastosMensuales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminCuentasEspeciales.aspx.cs">
+      <DependentUpon>AdminCuentasEspeciales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCuentasEspeciales.aspx.designer.cs">
+      <DependentUpon>AdminCuentasEspeciales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminCuentasFijas.aspx.cs">
+      <DependentUpon>AdminCuentasFijas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCuentasFijas.aspx.designer.cs">
+      <DependentUpon>AdminCuentasFijas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminHistCambioPrecio.aspx.cs">
+      <DependentUpon>AdminHistCambioPrecio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminHistCambioPrecio.aspx.designer.cs">
+      <DependentUpon>AdminHistCambioPrecio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminPropietarios.aspx.cs">
+      <DependentUpon>AdminPropietarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminPropietarios.aspx.designer.cs">
+      <DependentUpon>AdminPropietarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminUF.aspx.cs">
+      <DependentUpon>AdminUF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminUF.aspx.designer.cs">
+      <DependentUpon>AdminUF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminUsuarios.aspx.cs">
+      <DependentUpon>AdminUsuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminUsuarios.aspx.designer.cs">
+      <DependentUpon>AdminUsuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminCuentasVariables.aspx.cs">
+      <DependentUpon>AdminCuentasVariables.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCuentasVariables.aspx.designer.cs">
+      <DependentUpon>AdminCuentasVariables.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CespPropietario.aspx.cs">
+      <DependentUpon>CespPropietario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CespPropietario.aspx.designer.cs">
+      <DependentUpon>CespPropietario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CambioMedidor.aspx.cs">
+      <DependentUpon>CambioMedidor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CambioMedidor.aspx.designer.cs">
+      <DependentUpon>CambioMedidor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminDeudasAntigua.aspx.cs">
+      <DependentUpon>AdminDeudasAntigua.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminDeudasAntigua.aspx.designer.cs">
+      <DependentUpon>AdminDeudasAntigua.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminPropietariosMorosos.aspx.cs">
+      <DependentUpon>AdminPropietariosMorosos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminPropietariosMorosos.aspx.designer.cs">
+      <DependentUpon>AdminPropietariosMorosos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminCheques.aspx.cs">
+      <DependentUpon>AdminCheques.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCheques.aspx.designer.cs">
+      <DependentUpon>AdminCheques.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminCambioMedidores1.aspx.cs">
+      <DependentUpon>AdminCambioMedidores1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminCambioMedidores1.aspx.designer.cs">
+      <DependentUpon>AdminCambioMedidores1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Cartola.aspx.cs">
+      <DependentUpon>Cartola.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Cartola.aspx.designer.cs">
+      <DependentUpon>Cartola.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CartolaIngresoMensual.aspx.cs">
+      <DependentUpon>CartolaIngresoMensual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CartolaIngresoMensual.aspx.designer.cs">
+      <DependentUpon>CartolaIngresoMensual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CuentasVarPropietario.aspx.cs">
+      <DependentUpon>CuentasVarPropietario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CuentasVarPropietario.aspx.designer.cs">
+      <DependentUpon>CuentasVarPropietario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CuentasFijasPropietario.aspx.cs">
+      <DependentUpon>CuentasFijasPropietario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CuentasFijasPropietario.aspx.designer.cs">
+      <DependentUpon>CuentasFijasPropietario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CuentaCorriente.aspx.cs">
+      <DependentUpon>CuentaCorriente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CuentaCorriente.aspx.designer.cs">
+      <DependentUpon>CuentaCorriente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EstadodeCuenta.aspx.cs">
+      <DependentUpon>EstadodeCuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EstadodeCuenta.aspx.designer.cs">
+      <DependentUpon>EstadodeCuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GenerarNomina.aspx.cs">
+      <DependentUpon>GenerarNomina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GenerarNomina.aspx.designer.cs">
+      <DependentUpon>GenerarNomina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\IngresoLecturas.aspx.cs">
+      <DependentUpon>IngresoLecturas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\IngresoLecturas.aspx.designer.cs">
+      <DependentUpon>IngresoLecturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\DevExpress_Web_ASPxGridView_v8_31.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DevExpress_Web_ASPxGridView_v8_3.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\DevExpress_Web_ASPxPivotGrid_v8_31.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DevExpress_Web_ASPxPivotGrid_v8_3.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Aurora1.Master.cs">
+      <DependentUpon>Aurora1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Aurora1.Master.designer.cs">
+      <DependentUpon>Aurora1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Escritorio\Agenda.aspx.cs">
+      <DependentUpon>Agenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Escritorio\Agenda.aspx.designer.cs">
+      <DependentUpon>Agenda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Escritorio\Cambiopass.aspx.cs">
+      <DependentUpon>Cambiopass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Escritorio\Cambiopass.aspx.designer.cs">
+      <DependentUpon>Cambiopass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Atributos.cs" />
+    <Compile Include="UI\Autenticada.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\BasadaEnRolesAttribute.cs" />
+    <Compile Include="UI\Base.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Nivel.cs" />
+    <Compile Include="UI\QueryPerfCounter.cs" />
+    <Compile Include="UI\QueryString.cs" />
+    <Compile Include="UI\Utiles.cs" />
+    <Compile Include="Escritorio\Administracion.aspx.cs">
+      <DependentUpon>Administracion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Escritorio\Administracion.aspx.designer.cs">
+      <DependentUpon>Administracion.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\DevExpress_Web_ASPxGridView_v8_3.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>DevExpress_Web_ASPxGridView_v8_31.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="App_GlobalResources\DevExpress_Web_ASPxPivotGrid_v8_3.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>DevExpress_Web_ASPxPivotGrid_v8_31.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Themes\GreenLeaf %28Inversed%29\Web\rpBottomLeftCorner.png" />
+    <Content Include="App_Themes\GreenLeaf %28Inversed%29\Web\rpTopRightCorner.png" />
+    <Content Include="App_Themes\GreenLeaf %28Inversed%29\Web\styles.css" />
+    <Content Include="App_Themes\Youthful\Web\hlTailImage.png" />
+    <Content Include="App_Themes\Youthful\Web\Loading.gif" />
+    <Content Include="App_Themes\Youthful\Web\mHorizontalPopOut.gif" />
+    <Content Include="App_Themes\Youthful\Web\mItemBack.gif" />
+    <Content Include="App_Themes\Youthful\Web\mItemHBack.gif" />
+    <Content Include="App_Themes\Youthful\Web\mItemSBack.gif" />
+    <Content Include="App_Themes\Youthful\Web\mSeparator.gif" />
+    <Content Include="App_Themes\Youthful\Web\mSubMenuItem.gif" />
+    <Content Include="App_Themes\Youthful\Web\mSubMenuItemChecked.gif" />
+    <Content Include="App_Themes\Youthful\Web\mVerticalPopOut.gif" />
+    <Content Include="App_Themes\Youthful\Web\nbCollapse.gif" />
+    <Content Include="App_Themes\Youthful\Web\nbExpand.gif" />
+    <Content Include="App_Themes\Youthful\Web\nbGroupBack.gif" />
+    <Content Include="App_Themes\Youthful\Web\nbGroupHeaderBack.gif" />
+    <Content Include="App_Themes\Youthful\Web\nbGroupHeaderCBack.gif" />
+    <Content Include="App_Themes\Youthful\Web\nbGroupHeaderHBack.gif" />
+    <Content Include="App_Themes\Youthful\Web\nbItemBullet.gif" />
+    <Content Include="App_Themes\Youthful\Web\nbLoading.gif" />
+    <Content Include="App_Themes\Youthful\Web\pAll.png" />
+    <Content Include="App_Themes\Youthful\Web\pAllDisabled.png" />
+    <Content Include="App_Themes\Youthful\Web\pcCloseButton.png" />
+    <Content Include="App_Themes\Youthful\Web\pcHeaderBack.gif" />
+    <Content Include="App_Themes\Youthful\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\Youthful\Web\pcSizeGrip.gif" />
+    <Content Include="App_Themes\Youthful\Web\pFirst.png" />
+    <Content Include="App_Themes\Youthful\Web\pFirstDisabled.png" />
+    <Content Include="App_Themes\Youthful\Web\pLast.png" />
+    <Content Include="App_Themes\Youthful\Web\pLastDisabled.png" />
+    <Content Include="App_Themes\Youthful\Web\pNext.png" />
+    <Content Include="App_Themes\Youthful\Web\pNextDisabled.png" />
+    <Content Include="App_Themes\Youthful\Web\pPrev.png" />
+    <Content Include="App_Themes\Youthful\Web\pPrevDisabled.png" />
+    <Content Include="App_Themes\Youthful\Web\rpBottomLeft.png" />
+    <Content Include="App_Themes\Youthful\Web\rpBottomRight.png" />
+    <Content Include="App_Themes\Youthful\Web\rpHeaderLeftEdge.gif" />
+    <Content Include="App_Themes\Youthful\Web\rpHeaderSeparator.gif" />
+    <Content Include="App_Themes\Youthful\Web\rpNoHeaderTopLeft.png" />
+    <Content Include="App_Themes\Youthful\Web\rpNoHeaderTopRight.png" />
+    <Content Include="App_Themes\Youthful\Web\rpTopLeft.png" />
+    <Content Include="App_Themes\Youthful\Web\rpTopRight.png" />
+    <Content Include="App_Themes\Youthful\Web\smSecondLevelBullet.gif" />
+    <Content Include="App_Themes\Youthful\Web\smThirdLevelBullet.gif" />
+    <Content Include="App_Themes\Youthful\Web\styles.css" />
+    <Content Include="App_Themes\Youthful\Web\tcLoading.gif" />
+    <Content Include="App_Themes\Youthful\Web\tcTabABack.gif" />
+    <Content Include="App_Themes\Youthful\Web\tcTabBack.gif" />
+    <Content Include="App_Themes\Youthful\Web\tcTabBottomABack.gif" />
+    <Content Include="App_Themes\Youthful\Web\tcTabBottomBack.gif" />
+    <Content Include="App_Themes\Youthful\Web\tcTabBottomHBack.gif" />
+    <Content Include="App_Themes\Youthful\Web\tcTabHBack.gif" />
+    <Content Include="App_Themes\Youthful\Web\tcTabLeftABack.gif" />
+    <Content Include="App_Themes\Youthful\Web\tcTabLeftBack.gif" />
+    <Content Include="App_Themes\Youthful\Web\tcTabLeftHBack.gif" />
+    <Content Include="App_Themes\Youthful\Web\tcTabRightABack.gif" />
+    <Content Include="App_Themes\Youthful\Web\tcTabRightBack.gif" />
+    <Content Include="App_Themes\Youthful\Web\tcTabRightHBack.gif" />
+    <Content Include="App_Themes\Youthful\Web\tiBottomBorder.gif" />
+    <Content Include="Imagenes\2rightarrow.png" />
+    <Content Include="Imagenes\Acceso.jpg" />
+    <Content Include="Imagenes\AccesoSistema.jpg" />
+    <Content Include="Imagenes\action_refresh.gif" />
+    <Content Include="Imagenes\advertencia.ico" />
+    <Content Include="Imagenes\ASPTutorials.gif" />
+    <Content Include="Imagenes\auto.jpg" />
+    <Content Include="Imagenes\auto.png" />
+    <Content Include="Imagenes\avion.jpg" />
+    <Content Include="Imagenes\avion.png" />
+    <Content Include="Imagenes\a_guardarbutton1.gif" />
+    <Content Include="Imagenes\Bajar.gif" />
+    <Content Include="Imagenes\barco.jpg" />
+    <Content Include="Imagenes\barco.png" />
+    <Content Include="Imagenes\bateria.jpg" />
+    <Content Include="Imagenes\bg-main.png" />
+    <Content Include="Imagenes\bg-menu-main.png" />
+    <Content Include="Imagenes\bg-snippet-dim.png" />
+    <Content Include="Imagenes\bg-snippet.png" />
+    <Content Include="Imagenes\bg1.jpg" />
+    <Content Include="Imagenes\bg2.jpg" />
+    <Content Include="Imagenes\bgBotVerde.jpg" />
+    <Content Include="Imagenes\bg_body.gif" />
+    <Content Include="Imagenes\bg_gradient-left.png" />
+    <Content Include="Imagenes\bg_nav.gif" />
+    <Content Include="Imagenes\bg_wrapper.gif" />
+    <Content Include="Imagenes\body_bg.gif" />
+    <Content Include="Imagenes\bombillo.jpg" />
+    <Content Include="Imagenes\bombillo.png" />
+    <Content Include="Imagenes\botAceptar.gif" />
+    <Content Include="Imagenes\botAgregar.gif" />
+    <Content Include="Imagenes\botBorrar.gif" />
+    <Content Include="Imagenes\botBuscar01.gif" />
+    <Content Include="Imagenes\botContinuar.jpg" />
+    <Content Include="Imagenes\botDescargar.gif" />
+    <Content Include="Imagenes\botDescargar02.gif" />
+    <Content Include="Imagenes\botEditar.gif" />
+    <Content Include="Imagenes\botEnviar.gif" />
+    <Content Include="Imagenes\botFicha.gif" />
+    <Content Include="Imagenes\botGrabar.jpg" />
+    <Content Include="Imagenes\botGuardar.jpg" />
+    <Content Include="Imagenes\botNuevo.jpg" />
+    <Content Include="Imagenes\boton_delete.gif" />
+    <Content Include="Imagenes\boton_reporte.gif" />
+    <Content Include="Imagenes\botVB01.gif" />
+    <Content Include="Imagenes\br_Usuarios.jpg" />
+    <Content Include="Imagenes\b_aceptar.gif" />
+    <Content Include="Imagenes\b_agregar.gif" />
+    <Content Include="Imagenes\b_buscar.gif" />
+    <Content Include="Imagenes\b_confirmar.gif" />
+    <Content Include="Imagenes\b_enviar.gif" />
+    <Content Include="Imagenes\b_siguiente_paso.gif" />
+    <Content Include="Imagenes\calendar.gif" />
+    <Content Include="Imagenes\calendar.png" />
+    <Content Include="Imagenes\Calendar_scheduleHS.png" />
+    <Content Include="Imagenes\candado.png" />
+    <Content Include="Imagenes\carta.jpg" />
+    <Content Include="Imagenes\CCHC.gif" />
+    <Content Include="Imagenes\celular.jpg" />
+    <Content Include="Imagenes\circulorojo.gif" />
+    <Content Include="Imagenes\circuloverde.gif" />
+    <Content Include="Imagenes\close.gif" />
+    <Content Include="Imagenes\closedown.gif" />
+    <Content Include="Imagenes\collapse.jpg" />
+    <Content Include="Imagenes\collapse_blue.jpg" />
+    <Content Include="Imagenes\ContactSupport.gif" />
+    <Content Include="Imagenes\containerback.jpg" />
+    <Content Include="Imagenes\containerback2.jpg" />
+    <Content Include="Imagenes\cross_circle_frame.png" />
+    <Content Include="Imagenes\database_delete.png" />
+    <Content Include="Imagenes\database_insert.png" />
+    <Content Include="Imagenes\database__pencil.png" />
+    <Content Include="Imagenes\database__plus.png" />
+    <Content Include="Imagenes\demobottom.png" />
+    <Content Include="Imagenes\Demos.gif" />
+    <Content Include="Imagenes\demotop.png" />
+    <Content Include="Imagenes\descargar exe.jpg" />
+    <Content Include="Imagenes\descargar_Excel.gif" />
+    <Content Include="Imagenes\disk.png" />
+    <Content Include="Imagenes\Documentation.gif" />
+    <Content Include="Imagenes\down.gif" />
+    <Content Include="Imagenes\EmptyStar.png" />
+    <Content Include="Imagenes\encuesta.jpg" />
+    <Content Include="Imagenes\escobachica.jpg" />
+    <Content Include="Imagenes\expand.jpg" />
+    <Content Include="Imagenes\expand_blue.jpg" />
+    <Content Include="Imagenes\Files-text.ico" />
+    <Content Include="Imagenes\FilledStar.png" />
+    <Content Include="Imagenes\gato.jpg" />
+    <Content Include="Imagenes\globo.jpg" />
+    <Content Include="Imagenes\globo.png" />
+    <Content Include="Imagenes\guitarra.jpg" />
+    <Content Include="Imagenes\guitarra.png" />
+    <Content Include="Imagenes\HandleGrip.png" />
+    <Content Include="Imagenes\HandleHand.png" />
+    <Content Include="Imagenes\header-opened.png" />
+    <Content Include="Imagenes\header.png" />
+    <Content Include="Imagenes\headerbottom_img.png" />
+    <Content Include="Imagenes\headerbottom_imgLargo.png" />
+    <Content Include="Imagenes\headertop_img.jpg" />
+    <Content Include="Imagenes\icon_contact.gif" />
+    <Content Include="Imagenes\ic_home.gif" />
+    <Content Include="Imagenes\ic_impresora.gif" />
+    <Content Include="Imagenes\kinke.jpg" />
+    <Content Include="Imagenes\kinke.png" />
+    <Content Include="Imagenes\lapiz.bmp" />
+    <Content Include="Imagenes\lapiz2.jpg" />
+    <Content Include="Imagenes\leon.jpg" />
+    <Content Include="Imagenes\linterna.jpg" />
+    <Content Include="Imagenes\lists.ico" />
+    <Content Include="Imagenes\Llave_Cambio.gif" />
+    <Content Include="Imagenes\loading.gif" />
+    <Content Include="Imagenes\logo.jpg" />
+    <Content Include="Imagenes\logo.png" />
+    <Content Include="Imagenes\luna.jpg" />
+    <Content Include="Imagenes\navigation_back.gif" />
+    <Content Include="Imagenes\ok.ico" />
+    <Content Include="Imagenes\pbrs.png" />
+    <Content Include="Imagenes\perro.jpg" />
+    <Content Include="Imagenes\Question.PNG" />
+    <Content Include="Imagenes\radio.jpg" />
+    <Content Include="Imagenes\radio.png" />
+    <Content Include="Imagenes\rightcoltop.gif" />
+    <Content Include="Imagenes\rightcoltop2.gif" />
+    <Content Include="Imagenes\Salida.gif" />
+    <Content Include="Imagenes\samples_bg.gif" />
+    <Content Include="Imagenes\samples_bg.jpg" />
+    <Content Include="Imagenes\SavedStar.png" />
+    <Content Include="Imagenes\sidebar_header.png" />
+    <Content Include="Imagenes\Sin título.png" />
+    <Content Include="Imagenes\sobrecarta.png" />
+    <Content Include="Imagenes\sol.jpg" />
+    <Content Include="Imagenes\sol.png" />
+    <Content Include="Imagenes\telefono.jpg" />
+    <Content Include="Imagenes\telefono.png" />
+    <Content Include="Imagenes\tigre.jpg" />
+    <Content Include="Imagenes\tv.jpg" />
+    <Content Include="Imagenes\up.gif" />
+    <Content Include="Imagenes\Users.ico" />
+    <Content Include="Imagenes\vela.jpg" />
+    <Content Include="Imagenes\vela.png" />
+    <Content Include="Imagenes\walkthrough_bg.gif" />
+    <Content Include="Imagenes\xls.gif" />
+    <Content Include="StyleSheet2.css" />
+    <Content Include="XMLMenu\Administrador.xml" />
+    <Content Include="XMLMenu\Usuario.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\ActualizaGastosMensuales.aspx" />
+    <Content Include="Admin\AdminCuentasEspeciales.aspx" />
+    <Content Include="Admin\AdminCuentasFijas.aspx" />
+    <Content Include="Admin\AdminHistCambioPrecio.aspx" />
+    <Content Include="Admin\AdminPropietarios.aspx" />
+    <Content Include="Admin\AdminUF.aspx" />
+    <Content Include="Admin\AdminUsuarios.aspx" />
+    <Content Include="Admin\AdminCuentasVariables.aspx" />
+    <Content Include="Admin\CespPropietario.aspx" />
+    <Content Include="Admin\CambioMedidor.aspx" />
+    <Content Include="Admin\AdminDeudasAntigua.aspx" />
+    <Content Include="Admin\AdminPropietariosMorosos.aspx" />
+    <Content Include="Admin\AdminCheques.aspx" />
+    <Content Include="Admin\AdminCambioMedidores1.aspx" />
+    <Content Include="Admin\Cartola.aspx" />
+    <Content Include="Admin\CartolaIngresoMensual.aspx" />
+    <Content Include="Admin\CuentasVarPropietario.aspx" />
+    <Content Include="Admin\CuentasFijasPropietario.aspx" />
+    <Content Include="Admin\CuentaCorriente.aspx" />
+    <Content Include="Admin\EstadodeCuenta.aspx" />
+    <Content Include="Admin\GenerarNomina.aspx" />
+    <Content Include="Admin\HTMLPage1.htm" />
+    <Content Include="Admin\IngresoLecturas.aspx" />
+    <Content Include="App_Themes\Glass\Web\hlTail.gif" />
+    <Content Include="App_Themes\Glass\Web\Loading.gif" />
+    <Content Include="App_Themes\Glass\Web\mHorizontalPopOut.gif" />
+    <Content Include="App_Themes\Glass\Web\mItemBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mItemHBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mItemSBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mLargeItemBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mLargeItemHBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mLargeItemSBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mSubMenuItem.gif" />
+    <Content Include="App_Themes\Glass\Web\mSubMenuItemChecked.gif" />
+    <Content Include="App_Themes\Glass\Web\mVerticalPopOut.gif" />
+    <Content Include="App_Themes\Glass\Web\mVItemBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mVItemHBack.gif" />
+    <Content Include="App_Themes\Glass\Web\mVItemSBack.gif" />
+    <Content Include="App_Themes\Glass\Web\nbCollapse.png" />
+    <Content Include="App_Themes\Glass\Web\nbExpand.png" />
+    <Content Include="App_Themes\Glass\Web\nbHeaderBack.gif" />
+    <Content Include="App_Themes\Glass\Web\nbHeaderHBack.gif" />
+    <Content Include="App_Themes\Glass\Web\ncBackToTop.png" />
+    <Content Include="App_Themes\Glass\Web\ncTail.gif" />
+    <Content Include="App_Themes\Glass\Web\pAll.gif" />
+    <Content Include="App_Themes\Glass\Web\pAll.png" />
+    <Content Include="App_Themes\Glass\Web\pAllDisabled.gif" />
+    <Content Include="App_Themes\Glass\Web\pAllDisabled.png" />
+    <Content Include="App_Themes\Glass\Web\pcCloseButton.png" />
+    <Content Include="App_Themes\Glass\Web\pcContentBack.gif" />
+    <Content Include="App_Themes\Glass\Web\pcContentWithTabBottomBack.gif" />
+    <Content Include="App_Themes\Glass\Web\pcFooterBack.gif" />
+    <Content Include="App_Themes\Glass\Web\pcHeaderBack.gif" />
+    <Content Include="App_Themes\Glass\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\Glass\Web\pcSizeGrip.png" />
+    <Content Include="App_Themes\Glass\Web\pFirst.gif" />
+    <Content Include="App_Themes\Glass\Web\pFirst.png" />
+    <Content Include="App_Themes\Glass\Web\pFirstDisabled.gif" />
+    <Content Include="App_Themes\Glass\Web\pFirstDisabled.png" />
+    <Content Include="App_Themes\Glass\Web\pLast.gif" />
+    <Content Include="App_Themes\Glass\Web\pLast.png" />
+    <Content Include="App_Themes\Glass\Web\pLastDisabled.gif" />
+    <Content Include="App_Themes\Glass\Web\pLastDisabled.png" />
+    <Content Include="App_Themes\Glass\Web\pNext.gif" />
+    <Content Include="App_Themes\Glass\Web\pNext.png" />
+    <Content Include="App_Themes\Glass\Web\pNextDisabled.gif" />
+    <Content Include="App_Themes\Glass\Web\pNextDisabled.png" />
+    <Content Include="App_Themes\Glass\Web\pPrev.gif" />
+    <Content Include="App_Themes\Glass\Web\pPrev.png" />
+    <Content Include="App_Themes\Glass\Web\pPrevDisabled.gif" />
+    <Content Include="App_Themes\Glass\Web\pPrevDisabled.png" />
+    <Content Include="App_Themes\Glass\Web\rpBottomLeftCorner.png" />
+    <Content Include="App_Themes\Glass\Web\rpBottomRightCorner.png" />
+    <Content Include="App_Themes\Glass\Web\rpContentBack.gif" />
+    <Content Include="App_Themes\Glass\Web\rpHeaderBack.gif" />
+    <Content Include="App_Themes\Glass\Web\rpHeaderLeftEdge.gif" />
+    <Content Include="App_Themes\Glass\Web\rpHeaderRightEdge.gif" />
+    <Content Include="App_Themes\Glass\Web\rpLeftRightEdge.gif" />
+    <Content Include="App_Themes\Glass\Web\rpNoHeaderTopLeftCorner.png" />
+    <Content Include="App_Themes\Glass\Web\rpNoHeaderTopRightCorner.png" />
+    <Content Include="App_Themes\Glass\Web\rpTopLeftCorner.png" />
+    <Content Include="App_Themes\Glass\Web\rpTopRightCorner.png" />
+    <Content Include="App_Themes\Glass\Web\smLevel0Back.gif" />
+    <Content Include="App_Themes\Glass\Web\styles.css" />
+    <Content Include="App_Themes\Glass\Web\tcATabBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcATabBottomBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcContentBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcHTabBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcHTabBottomBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcTabBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tcTabBottomBack.gif" />
+    <Content Include="App_Themes\Glass\Web\tiBackToTop.png" />
+    <Content Include="App_Themes\Glass\Web\tiHeaderBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtButtonBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtButtonBackDis.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtButtonBackHover.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtButtonBackPressed.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtCalendarFNNextYear.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtCalendarFNPrevYear.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtCalendarHeadBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtCalendarNextMonth.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtCalendarNextMonthDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtCalendarNextYear.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtCalendarNextYearDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtCalendarPrevMonth.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtCalendarPrevMonthDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtCalendarPrevYear.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtCalendarPrevYearDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtDropDown.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtDropDownDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtEllipsis.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtEllipsisDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtError.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtSpinDecBtnBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtSpinEditDecrementImage.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtSpinEditDecrementImageDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtSpinEditIncrementImage.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtSpinEditIncrementImageDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtSpinEditLargeDecImage.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtSpinEditLargeDecImageDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtSpinEditLargeIncImage.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtSpinEditLargeIncImageDisabled.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtSpinIncBtnBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtSpinIncBtnHBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtSpinIncBtnPBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtSpinLargeIncBtnBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtSpinLargeIncBtnHBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\edtSpinLargeIncBtnPBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcadd.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcaddhot.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcgroupaddcondition.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcgroupaddgroup.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcgroupand.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcgroupnotand.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcgroupnotor.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcgroupor.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcgroupremove.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcopany.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcopbegin.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcopbetween.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcopblank.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcopcontain.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcopend.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcopequal.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcopgreater.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcopgreaterorequal.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcopless.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcoplessorequal.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcoplike.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcopnotany.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcopnotbetween.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcopnotblank.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcopnotcontain.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcopnotequal.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcopnotlike.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcremove.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\fcremovehot.png" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\Loading.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Editors\styles.css" />
+    <Content Include="App_Themes\Office2003 Olive\GridView\gvCollapsedButton.png" />
+    <Content Include="App_Themes\Office2003 Olive\GridView\gvDragAndDropArrowDown.gif" />
+    <Content Include="App_Themes\Office2003 Olive\GridView\gvDragAndDropArrowUp.gif" />
+    <Content Include="App_Themes\Office2003 Olive\GridView\gvDragAndDropHideColumn.gif" />
+    <Content Include="App_Themes\Office2003 Olive\GridView\gvExpandedButton.png" />
+    <Content Include="App_Themes\Office2003 Olive\GridView\gvFilterRowButton.png" />
+    <Content Include="App_Themes\Office2003 Olive\GridView\gvFocusedBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\GridView\gvGradient.gif" />
+    <Content Include="App_Themes\Office2003 Olive\GridView\gvHeaderFilter.gif" />
+    <Content Include="App_Themes\Office2003 Olive\GridView\gvHeaderFilterActive.gif" />
+    <Content Include="App_Themes\Office2003 Olive\GridView\gvHeaderSortDown.gif" />
+    <Content Include="App_Themes\Office2003 Olive\GridView\gvHeaderSortUp.gif" />
+    <Content Include="App_Themes\Office2003 Olive\GridView\gvLoadingOnStatusBar.gif" />
+    <Content Include="App_Themes\Office2003 Olive\GridView\gvParentGroupRows.gif" />
+    <Content Include="App_Themes\Office2003 Olive\GridView\gvTitleBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\GridView\Loading.gif" />
+    <Content Include="App_Themes\Office2003 Olive\GridView\styles.css" />
+    <Content Include="App_Themes\Office2003 Olive\GridView\WindowResizer.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\hlTail.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\Loading.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\mHorizontalPopOut.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\mItemBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\mItemHBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\mItemSBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\mItemSeparatorBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\mItemVerticalSeparatorBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\mPopupBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\mPopupHBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\mSubMenuItem.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\mSubMenuItemChecked.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\mVerticalPopOut.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\nbBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\nbCollapse.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\nbExpand.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\nbGroupBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\nbGroupHeaderBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\nbHBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\nbSBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\pAll.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\pAllDisabled.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\pcCloseButton.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\pcHeaderBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\pcSizeGrip.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\pFirst.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\pFirstDisabled.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\pLast.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\pLastDisabled.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\pNext.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\pNextDisabled.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\pPrev.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\pPrevDisabled.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\rpBottomLeftCorner.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\rpBottomRightCorner.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\rpHeader.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\rpNoHeaderTopLeftCorner.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\rpNoHeaderTopRightCorner.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\rpTopEdge.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\rpTopLeftCorner.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\rpTopRightCorner.png" />
+    <Content Include="App_Themes\Office2003 Olive\Web\smBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\smFirstLevelBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\smSecondLevelBullet.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\styles.css" />
+    <Content Include="App_Themes\Office2003 Olive\Web\tcBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\tcTabABack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\tcTabAHBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\tcTabBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\tcTabHBack.gif" />
+    <Content Include="App_Themes\Office2003 Olive\Web\tiBackToTop.gif" />
+    <Content Include="App_Themes\Office2003 Olive\XtraReports\BtnFirstPage.png" />
+    <Content Include="App_Themes\Office2003 Olive\XtraReports\BtnFirstPageDisabled.png" />
+    <Content Include="App_Themes\Office2003 Olive\XtraReports\BtnLastPage.png" />
+    <Content Include="App_Themes\Office2003 Olive\XtraReports\BtnLastPageDisabled.png" />
+    <Content Include="App_Themes\Office2003 Olive\XtraReports\BtnNextPage.png" />
+    <Content Include="App_Themes\Office2003 Olive\XtraReports\BtnNextPageDisabled.png" />
+    <Content Include="App_Themes\Office2003 Olive\XtraReports\BtnPrevPage.png" />
+    <Content Include="App_Themes\Office2003 Olive\XtraReports\BtnPrevPageDisabled.png" />
+    <Content Include="App_Themes\Office2003 Olive\XtraReports\BtnPrint.png" />
+    <Content Include="App_Themes\Office2003 Olive\XtraReports\BtnPrintDisabled.png" />
+    <Content Include="App_Themes\Office2003 Olive\XtraReports\BtnPrintPage.png" />
+    <Content Include="App_Themes\Office2003 Olive\XtraReports\BtnPrintPageDisabled.png" />
+    <Content Include="App_Themes\Office2003 Olive\XtraReports\BtnSave.png" />
+    <Content Include="App_Themes\Office2003 Olive\XtraReports\BtnSaveDisabled.png" />
+    <Content Include="App_Themes\Office2003 Olive\XtraReports\BtnSaveWindow.png" />
+    <Content Include="App_Themes\Office2003 Olive\XtraReports\BtnSaveWindowDisabled.png" />
+    <Content Include="App_Themes\Office2003 Olive\XtraReports\BtnSearch.png" />
+    <Content Include="App_Themes\Office2003 Olive\XtraReports\BtnSearchDisabled.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtButtonBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtButtonBackHover.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtButtonEditButtonBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtButtonEditButtonBackDis.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarButtonBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarButtonHBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarButtonPBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarFNNextYear.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarFNPrevYear.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarFooterBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarHeaderBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarNextMonth.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarNextMonthDisabled.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarNextYear.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarNextYearDisabled.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarPrevMonth.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarPrevMonthDisabled.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarPrevYear.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtCalendarPrevYearDisabled.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtDropDown.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtDropDownButtonHoverBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtDropDownButtonPressedBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtDropDownDisabled.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtEllipsis.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtEllipsisDisabled.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtError.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinDecBtnBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinDecBtnHBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinDecBtnPBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinEditDecrementImage.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinEditDecrementImageDisabled.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinEditIncrementImage.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinEditIncrementImageDisabled.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinEditLargeDecImage.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinEditLargeDecImageDisabled.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinEditLargeIncImage.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinEditLargeIncImageDisabled.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinIncBtnBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinIncBtnHBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinIncBtnPBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinLargeIncBtnBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinLargeIncBtnHBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\edtSpinLargeIncBtnPBack.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcadd.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcaddhot.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcgroupaddcondition.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcgroupaddgroup.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcgroupand.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcgroupnotand.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcgroupnotor.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcgroupor.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcgroupremove.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcopany.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcopbegin.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcopbetween.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcopblank.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcopcontain.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcopend.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcopequal.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcopgreater.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcopgreaterorequal.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcopless.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcoplessorequal.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcoplike.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcopnotany.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcopnotbetween.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcopnotblank.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcopnotcontain.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcopnotequal.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcopnotlike.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcremove.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\fcremovehot.png" />
+    <Content Include="App_Themes\Plastic Blue\Editors\Loading.gif" />
+    <Content Include="App_Themes\Plastic Blue\Editors\styles.css" />
+    <Content Include="App_Themes\Soft Orange\Web\dvPagerPanelBack.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\Loading.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\mHorizontalPopOut.png" />
+    <Content Include="App_Themes\Soft Orange\Web\mHorizontalPopOutH.png" />
+    <Content Include="App_Themes\Soft Orange\Web\mItemBack.png" />
+    <Content Include="App_Themes\Soft Orange\Web\mItemBackH.png" />
+    <Content Include="App_Themes\Soft Orange\Web\mItemChecked.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\mSeparatorBack.png" />
+    <Content Include="App_Themes\Soft Orange\Web\mSubMenuItem.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\mSubMenuItemChecked.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\mVerticalPopOut.png" />
+    <Content Include="App_Themes\Soft Orange\Web\mVSeparatorBack.png" />
+    <Content Include="App_Themes\Soft Orange\Web\nbCollapse.png" />
+    <Content Include="App_Themes\Soft Orange\Web\nbExpand.png" />
+    <Content Include="App_Themes\Soft Orange\Web\nbHeaderBack.png" />
+    <Content Include="App_Themes\Soft Orange\Web\nbHeaderHBack.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pAll.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pAllDisabled.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pcCloseButton.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pcFooterBack.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\pcHeaderBack.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\pcModalBack.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\pcSizeGrip.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pFirst.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pFirstDisabled.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pLast.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pLastDisabled.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pNext.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pNextDisabled.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pPrev.png" />
+    <Content Include="App_Themes\Soft Orange\Web\pPrevDisabled.png" />
+    <Content Include="App_Themes\Soft Orange\Web\rpBottomEdge.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\rpBottomLeftCorner.png" />
+    <Content Include="App_Themes\Soft Orange\Web\rpBottomRightCorner.png" />
+    <Content Include="App_Themes\Soft Orange\Web\rpHeaderBack.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\rpHeaderLeftEdge.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\rpHeaderRightEdge.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\rpLeftEdge.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\rpNoHeaderTopEdge.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\rpNoHeaderTopLeftCorner.png" />
+    <Content Include="App_Themes\Soft Orange\Web\rpNoHeaderTopRightCorner.png" />
+    <Content Include="App_Themes\Soft Orange\Web\rpRightEdge.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\rpTopEdge.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\rpTopLeftCorner.png" />
+    <Content Include="App_Themes\Soft Orange\Web\rpTopRightCorner.png" />
+    <Content Include="App_Themes\Soft Orange\Web\styles.css" />
+    <Content Include="App_Themes\Soft Orange\Web\tcATabBack.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\tcATabBottomBack.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\tcTabBack.gif" />
+    <Content Include="App_Themes\Soft Orange\Web\tiBackToTop.png" />
+    <Content Include="App_Themes\Youthful\Editors\edtCalendarBack.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtCalendarButtonBack.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtCalendarFNNextYear.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtCalendarFNPrevYear.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtCalendarNextMonth.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtCalendarNextMonthDisabled.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtCalendarNextYear.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtCalendarNextYearDisabled.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtCalendarPrevMonth.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtCalendarPrevMonthDisabled.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtCalendarPrevYear.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtCalendarPrevYearDisabled.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtDropDown.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtDropDownBack.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtDropDownBackDis.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtDropDownButtonHoverBack.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtDropDownDisabled.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtEllipsis.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtEllipsisDisabled.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtError.png" />
+    <Content Include="App_Themes\Youthful\Editors\edtSpinEditDecrementImage.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtSpinEditDecrementImageDisabled.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtSpinEditIncrementImage.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtSpinEditIncrementImageDisabled.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtSpinEditLargeDecImage.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtSpinEditLargeDecImageDisabled.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtSpinEditLargeIncImage.gif" />
+    <Content Include="App_Themes\Youthful\Editors\edtSpinEditLargeIncImageDisabled.gif" />
+    <Content Include="App_Themes\Youthful\Editors\fcadd.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcaddhot.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcgroupaddcondition.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcgroupaddgroup.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcgroupand.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcgroupnotand.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcgroupnotor.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcgroupor.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcgroupremove.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcopany.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcopbegin.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcopbetween.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcopblank.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcopcontain.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcopend.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcopequal.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcopgreater.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcopgreaterorequal.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcopless.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcoplessorequal.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcoplike.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcopnotany.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcopnotbetween.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcopnotblank.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcopnotcontain.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcopnotequal.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcopnotlike.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcremove.png" />
+    <Content Include="App_Themes\Youthful\Editors\fcremovehot.png" />
+    <Content Include="App_Themes\Youthful\Editors\Loading.gif" />
+    <Content Include="App_Themes\Youthful\Editors\styles.css" />
+    <Content Include="App_Themes\Youthful\GridView\gvCollapsedButton.gif" />
+    <Content Include="App_Themes\Youthful\GridView\gvCollapsedButton.png" />
+    <Content Include="App_Themes\Youthful\GridView\gvDetailCollapsedButton.gif" />
+    <Content Include="App_Themes\Youthful\GridView\gvDetailCollapsedButton.png" />
+    <Content Include="App_Themes\Youthful\GridView\gvDetailExpandedButton.gif" />
+    <Content Include="App_Themes\Youthful\GridView\gvDetailExpandedButton.png" />
+    <Content Include="App_Themes\Youthful\GridView\gvDragAndDropArrowDown.gif" />
+    <Content Include="App_Themes\Youthful\GridView\gvDragAndDropArrowUp.gif" />
+    <Content Include="App_Themes\Youthful\GridView\gvDragAndDropHideColumn.gif" />
+    <Content Include="App_Themes\Youthful\GridView\gvExpandedButton.gif" />
+    <Content Include="App_Themes\Youthful\GridView\gvExpandedButton.png" />
+    <Content Include="App_Themes\Youthful\GridView\gvFilterRowButton.png" />
+    <Content Include="App_Themes\Youthful\GridView\gvHeaderFilter.gif" />
+    <Content Include="App_Themes\Youthful\GridView\gvHeaderFilterActive.gif" />
+    <Content Include="App_Themes\Youthful\GridView\gvHeaderSortDown.gif" />
+    <Content Include="App_Themes\Youthful\GridView\gvHeaderSortUp.gif" />
+    <Content Include="App_Themes\Youthful\GridView\gvLoadingOnStatusBar.gif" />
+    <Content Include="App_Themes\Youthful\GridView\gvParentGroupRows.gif" />
+    <Content Include="App_Themes\Youthful\GridView\Loading.gif" />
+    <Content Include="App_Themes\Youthful\GridView\styles.css" />
+    <Content Include="App_Themes\Youthful\GridView\WindowResizer.gif" />
+    <Content Include="Aurora1.Master" />
+    <Content Include="Escritorio\Administracion.aspx" />
+    <Content Include="Escritorio\Agenda.aspx" />
+    <Content Include="Escritorio\Cambiopass.aspx" />
+    <Content Include="Imagenes\84.png" />
+    <Content Include="Imagenes\Aurora2.jpg" />
+    <Content Include="Imagenes\Aurora3.jpg" />
+    <Content Include="Imagenes\billete.png" />
+    <Content Include="Imagenes\Cartola.png" />
+    <Content Include="Imagenes\dinero.png" />
+    <Content Include="Imagenes\escoba2.jpg" />
+    <Content Include="Imagenes\frameprint.png" />
+    <Content Include="Imagenes\ktimer.ico" />
+    <Content Include="Imagenes\kwallet.png" />
+    <Content Include="Imagenes\password.ico" />
+    <Content Include="Imagenes\regenerar.png" />
+    <Content Include="Imagenes\top.jpg" />
+    <Content Include="Imagenes\variables.PNG" />
+    <Content Include="Images\ASPxRoundPanel\1841755099\BottomLeftCorner.png" />
+    <Content Include="Images\ASPxRoundPanel\1841755099\BottomRightCorner.png" />
+    <Content Include="Images\ASPxRoundPanel\1841755099\NoHeaderTopLeftCorner.png" />
+    <Content Include="Images\ASPxRoundPanel\1841755099\NoHeaderTopRightCorner.png" />
+    <Content Include="Images\ASPxRoundPanel\1841755099\TopLeftCorner.png" />
+    <Content Include="Images\ASPxRoundPanel\1841755099\TopRightCorner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevExpress\ASPxSchedulerForms\AppointmentForm.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevExpress\ASPxSchedulerForms\AppointmentForm.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevExpress\ASPxSchedulerForms\AppointmentFormEx.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevExpress\ASPxSchedulerForms\AppointmentFormEx.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevExpress\ASPxSchedulerForms\GotoDateForm.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevExpress\ASPxSchedulerForms\GotoDateForm.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevExpress\ASPxSchedulerForms\InplaceEditor.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevExpress\ASPxSchedulerForms\InplaceEditor.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevExpress\ASPxSchedulerForms\RecurrentAppointmentDeleteForm.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevExpress\ASPxSchedulerForms\RecurrentAppointmentDeleteForm.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevExpress\ASPxSchedulerForms\RecurrentAppointmentEditForm.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevExpress\ASPxSchedulerForms\RecurrentAppointmentEditForm.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevExpress\ASPxSchedulerForms\HorizontalAppointmentTemplate.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevExpress\ASPxSchedulerForms\HorizontalAppointmentTemplate.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevExpress\ASPxSchedulerForms\HorizontalSameDayAppointmentTemplate.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevExpress\ASPxSchedulerForms\HorizontalSameDayAppointmentTemplate.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DevExpress\ASPxSchedulerForms\VerticalAppointmentTemplate.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DevExpress\ASPxSchedulerForms\VerticalAppointmentTemplate.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\CartolaContabilidad.aspx" />
+    <Content Include="Admin\ReporteConsumo.aspx" />
+    <Content Include="Admin\ReciboDinero.aspx" />
+    <Content Include="Admin\EnviarCorreos.aspx" />
+    <Content Include="DevExpress\ASPxSchedulerForms\ReminderForm.ascx" />
+    <Content Include="Admin\AdminFeriados.aspx" />
+    <Content Include="Imagenes\pagado.jpg" />
+    <Content Include="Templates\AguaTemplate.txt" />
+    <Content Include="Templates\Copy of AguaTemplate.txt" />
+    <Content Include="Templates\OtrosTemplate.txt" />
+    <Content Include="Templates\Copy of NotaCobroTemplate.txt" />
+    <Content Include="Templates\Copy of Recibo.txt" />
+    <Content Include="Templates\LuzTemplate.txt" />
+    <Content Include="Templates\NotaCobroTemplate.txt" />
+    <Content Include="Admin\MensajesNota.aspx" />
+    <Content Include="Templates\Recibo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\CartolaContabilidad.aspx.cs">
+      <DependentUpon>CartolaContabilidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CartolaContabilidad.aspx.designer.cs">
+      <DependentUpon>CartolaContabilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReporteConsumo.aspx.cs">
+      <DependentUpon>ReporteConsumo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReporteConsumo.aspx.designer.cs">
+      <DependentUpon>ReporteConsumo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ReciboDinero.aspx.cs">
+      <DependentUpon>ReciboDinero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ReciboDinero.aspx.designer.cs">
+      <DependentUpon>ReciboDinero.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EnviarCorreos.aspx.cs">
+      <DependentUpon>EnviarCorreos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EnviarCorreos.aspx.designer.cs">
+      <DependentUpon>EnviarCorreos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\AppointmentForm.ascx.designer.cs">
+      <DependentUpon>AppointmentForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\AppointmentFormEx.ascx.designer.cs">
+      <DependentUpon>AppointmentFormEx.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\GotoDateForm.ascx.designer.cs">
+      <DependentUpon>GotoDateForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\HorizontalAppointmentTemplate.ascx.designer.cs">
+      <DependentUpon>HorizontalAppointmentTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\HorizontalSameDayAppointmentTemplate.ascx.designer.cs">
+      <DependentUpon>HorizontalSameDayAppointmentTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\InplaceEditor.ascx.designer.cs">
+      <DependentUpon>InplaceEditor.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\RecurrentAppointmentDeleteForm.ascx.designer.cs">
+      <DependentUpon>RecurrentAppointmentDeleteForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\RecurrentAppointmentEditForm.ascx.designer.cs">
+      <DependentUpon>RecurrentAppointmentEditForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\ReminderForm.ascx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\ReminderForm.ascx.designer.cs">
+      <DependentUpon>ReminderForm.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DevExpress\ASPxSchedulerForms\VerticalAppointmentTemplate.ascx.designer.cs">
+      <DependentUpon>VerticalAppointmentTemplate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminFeriados.aspx.cs">
+      <DependentUpon>AdminFeriados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminFeriados.aspx.designer.cs">
+      <DependentUpon>AdminFeriados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\MensajesNota.aspx.cs">
+      <DependentUpon>MensajesNota.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\MensajesNota.aspx.designer.cs">
+      <DependentUpon>MensajesNota.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admin\csvPlantillas\" />
+    <Folder Include="Admin\UploadControl\" />
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1254</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

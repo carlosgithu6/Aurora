@@ -1,0 +1,36 @@
+﻿<table style="width:95% border-color:#000000; border-style:solid; font-size:17px; border-width:1px; margin-left: auto; margin-right: auto" align="center"> 
+<tr>
+<td width="436" style="border-color:#FFFFFF">ASOCIACION PROPIETARIOS LA AURORA DE CURACAVI</td>
+<td width="460" style="border-color:#FFFFFF">RECIBO DE DINERO</td>
+</tr><tr><td style="width:'100' border-color:#FFFFFF">RUT: 72.117.900-1</td>
+<td style="border-color:#FFFFFF">&nbsp;</td>
+</tr>
+<tr>
+<td style="border-color:#FFFFFF">&nbsp;</td>
+<td style="border-color:#FFFFFF">MONTO: <@MONTO></td>
+</tr>
+<tr> 
+<td colspan="2" style="border-color:#FFFFFF">RECIBI DE:<@PROPIETARIO></td> 
+</tr> 
+<tr> 
+<td colspan="2" style="border-color:#FFFFFF">LA SUMA DE: <@MONTOLETRA></td> 
+</tr> 
+<tr> 
+<td style="border-color:#FFFFFF">PARCELA: <@PARCELA> SECTOR: <@SECTOR></td> 
+<td style="border-color:#FFFFFF"></td> 
+</tr> 
+<tr> 
+<td style="border-color:#FFFFFF">&nbsp;</td> 
+<td style="border-color:#FFFFFF"></td> 
+</tr> 
+<tr> 
+<td style="border-color:#FFFFFF">POR CONCEPTO DE: </td> 
+<td style="border-color:#FFFFFF"></td> 
+</tr> 
+<tr> 
+<td colspan="2" style="border-color:#FFFFFF;border-width:0px; margin-left:auto; margin-right:auto"></td> 
+</tr> 
+<tr> 
+<td colspan="2" style="border-color:#FFFFFF"><@CONCEPTOS></td> 
+</tr> 
+</table>

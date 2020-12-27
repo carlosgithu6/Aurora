@@ -1,0 +1,174 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Aurora1.master.cs" Inherits="Aurora.Web.Aurora1" %>
+
+<%@ Register Assembly="DevExpress.Web.v8.3, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+    Namespace="DevExpress.Web.ASPxMenu" TagPrefix="dxm" %>
+
+<%@ Register assembly="DevExpress.Web.v8.3, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxRoundPanel" tagprefix="dxrp" %>
+<%@ Register assembly="DevExpress.Web.v8.3, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxPanel" tagprefix="dxp" %>
+
+<%@ Register assembly="DevExpress.Web.ASPxEditors.v8.3, Version=8.3.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Web.ASPxEditors" tagprefix="dxe" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>SISTEMA DE GESTIÓN DE COBRANZAS "LA AURORA"</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            text-align: center;
+        }
+        .style2
+        {
+            font-family: Verdana;
+            font-weight: bold;
+            font-size: x-small;
+        }
+    .dxmMenu_Office2003_Olive, .dxmVerticalMenu_Office2003_Olive
+{
+	font: 9pt Tahoma;
+	color: black;	
+	background: #F2F0E4 url('App_Themes/Office2003%20Olive/Web/mItemBack.gif') repeat-y left top;
+	border: solid 1px #758D5E;
+	padding: 3px;
+}
+.dxmMenuItemWithPopOutImage_Office2003_Olive, .dxmMenuItemWithImageWithPopOutImage_Office2003_Olive
+{
+	padding-top: 4px;
+	padding-right: 6px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+}	
+.dxmMenuItem_Office2003_Olive, .dxmMenuItemWithImage_Office2003_Olive, .dxmMenuItemWithPopOutImage_Office2003_Olive, .dxmMenuItemWithImageWithPopOutImage_Office2003_Olive,
+.dxmVerticalMenuItem_Office2003_Olive, .dxmVerticalMenuItemWithImage_Office2003_Olive, .dxmVerticalMenuItemWithPopOutImage_Office2003_Olive, .dxmVerticalMenuItemWithImageWithPopOutImage_Office2003_Olive, 
+.dxmMenuLargeItem_Office2003_Olive, .dxmMenuLargeItemWithImage_Office2003_Olive, .dxmMenuLargeItemWithPopOutImage_Office2003_Olive, .dxmMenuLargeItemWithImageWithPopOutImage_Office2003_Olive,
+.dxmVerticalMenuLargeItem_Office2003_Olive, .dxmVerticalMenuLargeItemWithImage_Office2003_Olive, .dxmVerticalMenuLargeItemWithPopOutImage_Office2003_Olive, .dxmVerticalMenuLargeItemWithImageWithPopOutImage_Office2003_Olive
+{
+	font: 9pt Tahoma;
+	color: black;
+	white-space: nowrap;
+}
+.dxmControl_Office2003_Olive a, .dxmMenu_Office2003_Olive a, .dxmVerticalMenu_Office2003_Olive a, .dxmSubMenu_Office2003_Olive a
+{
+	color: black;
+	text-decoration: none;
+}
+        .style3
+        {
+            width: 121px;
+        }
+        .style4
+        {
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+    <td align="center">
+       
+        <dxrp:ASPxRoundPanel ID="ASPxRoundPanel1" runat="server" Width="98%" 
+            BackColor="#ECFEDA" CssFilePath="~/App_Themes/GreenLeaf/{0}/styles.css" 
+            CssPostfix="GreenLeaf" View="GroupBox" HeaderText="LA AURORA">
+            <BottomRightCorner Height="16px" 
+                Url="~/App_Themes/GreenLeaf/Web/rpBottomRightCorner.png" Width="16px" />
+            <ContentPaddings Padding="0px" />
+            <Border BorderColor="#94C43A" BorderStyle="Solid" BorderWidth="2px" />
+            <HeaderStyle Font-Bold="True">
+            <BackgroundImage HorizontalPosition="center" Repeat="NoRepeat" />
+            <Border BorderColor="#94C43A" BorderStyle="Solid" BorderWidth="1px" />
+            </HeaderStyle>
+         <PanelCollection>
+            <dxp:PanelContent ID="PanelContent1" runat="server">
+                <table width="100%">
+                <tr>
+                <td align="left" valign="top" class="style3">
+                    &nbsp;</td>
+                    <td align="center" valign="bottom" class="style4">
+                        <dxe:ASPxLabel ID="lblNombre" runat="server" 
+                            CssFilePath="~/App_Themes/Office2003 Olive/{0}/styles.css" 
+                            CssPostfix="Office2003_Olive">
+                        </dxe:ASPxLabel>
+                    </td>
+                    <td align="right" class="style4" colspan="2" valign="bottom">
+                        <dxe:ASPxLabel ID="lblFecha" runat="server" 
+                            CssFilePath="~/App_Themes/Office2003 Olive/{0}/styles.css" 
+                            CssPostfix="Office2003_Olive">
+                        </dxe:ASPxLabel>
+                    </td>
+                </tr>
+                    <tr>
+                        <td align="left" class="style3" valign="top" rowspan="4">
+                            <dxe:ASPxImage ID="ASPxImage1" runat="server" ImageUrl="~/Imagenes/logo.png">
+                            </dxe:ASPxImage>
+                        </td>
+                        <td align="left" valign="bottom" colspan="2" style="background-color: #5CAC5C;height:5px">
+                        </td>
+                        <td align="right" valign="top" class="style4" rowspan="4">
+                         
+                            <asp:ImageButton ID="btnPassword" runat="server" CausesValidation="False" 
+                                ImageUrl="~/Imagenes/password.ico" OnClick="btnPassword_Click" 
+                                ToolTip="Cambiar password" Height="24px" Width="24px" />
+                            <asp:ImageButton ID="btnSalir" runat="server" CausesValidation="False" 
+                                ImageUrl="~/Imagenes/logout.ico" OnClick="btnSalir_Click" ToolTip="Salir" 
+                                Height="24px" Width="24px" />
+                         
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" colspan="2" valign="bottom">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" colspan="2" valign="bottom">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" class="style4" colspan="2" valign="bottom">
+                            <dxm:ASPxMenu ID="MenuPrincipal1" runat="server" 
+                                BorderBetweenItemAndSubMenu="HideRootOnly" 
+                                CssFilePath="~/App_Themes/Office2003 Olive/{0}/styles.css" 
+                                CssPostfix="Office2003_Olive" DataSourceID="XmlDataSource1" 
+                                EnableCallBacks="True" ImageFolder="~/App_Themes/Office2003 Olive/{0}/" 
+                                ItemSpacing="1px" SeparatorColor="Transparent" SeparatorHeight="14px" 
+                                SeparatorWidth="2px" ShowPopOutImages="True">
+                                <SeparatorPaddings PaddingBottom="1px" PaddingRight="0px" />
+                                <ItemSubMenuOffset FirstItemX="2" LastItemX="2" X="2" />
+                                <ItemStyle ImageSpacing="6px" PopOutImageSpacing="10px" />
+                                <SubMenuStyle GutterWidth="0px" />
+                            </dxm:ASPxMenu>
+                        </td>
+                    </tr>
+                </table>
+                <asp:XmlDataSource ID="XmlDataSource1" runat="server" XPath="mainmenu/item">
+                </asp:XmlDataSource>
+                <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                    <td align="center">
+                       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+              
+                       </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                </table>
+           
+                <div class="style1">
+                    <span class="style2">
+                    <br />
+                    <br />
+                    Copyright © 2009 Parque La Aurora . Todos los derechos reservados.</span>
+                </div>
+            </dxp:PanelContent>
+        </PanelCollection>
+            <TopLeftCorner Height="16px" 
+                Url="~/App_Themes/GreenLeaf/Web/rpTopLeftCorner.png" Width="16px" />
+        </dxrp:ASPxRoundPanel>
+      </td>
+    </tr>
+    </table>
+ </form>
+</body>
+</html>

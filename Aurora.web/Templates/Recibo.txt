@@ -1,0 +1,44 @@
+﻿<table align="center" bordercolor="#000000"  style="width:95% border-color:#000000; border-style:solid; font-size:17px; border-width:1px; margin-left: auto; margin-right: auto"> 
+<tr>
+<td width="517" style="border-color:#FFFFFF"><strong>ASOCIACION PROPIETARIOS LA AURORA DE CURACAVI</strong></td>
+<td width="381" style="border-color:#FFFFFF"><div align="right"><strong><u>RECIBO DE DINERO</u></strong></div></td>
+</tr>
+<tr>
+  <td style="width:'100' border-color:#FFFFFF"><strong>FONO/FAX:22 835 5068</strong></td>
+  <td style="border-color:#FFFFFF" align="right">Folio:</td>
+</tr>
+<tr><td style="width:'100' border-color:#FFFFFF"><strong>RUT: 72.117.900-1</strong></td>
+<td style="border-color:#FFFFFF"><strong>EMAIL:parquelaaurora@tie.cl</strong></td>
+</tr>
+<tr> 
+<td colspan="2" style="border-color:#FFFFFF"><hr></hr></td> 
+</tr> 
+<tr>
+<td style="border-color:#FFFFFF"></td>
+<td style="border-color:#FFFFFF"></td>
+</tr>
+<tr> 
+<td colspan="2" style="border-color:#FFFFFF"><strong>RECIBI DE:<@PROPIETARIO></strong></td> 
+</tr> 
+<tr> 
+<td colspan="2" style="border-color:#FFFFFF"><strong>LA SUMA DE: <u><@MONTO> (<@MONTOLETRA>)</u>  <@PARCIAL></strong></td> 
+</tr> 
+<tr> 
+<td style="border-color:#FFFFFF"><strong>PARCELA: <@PARCELA> | SECTOR: <@SECTOR> | LETRA: <@LETRA></strong></td> 
+<td style="border-color:#FFFFFF"></td> 
+</tr> 
+<tr> 
+<td style="border-color:#FFFFFF">&nbsp;</td> 
+<td style="border-color:#FFFFFF"></td> 
+</tr> 
+<tr> 
+<td style="border-color:#FFFFFF"><strong>POR PERIODO DE: <@MES> / <@ANO> </strong></td> 
+<td style="border-color:#FFFFFF"></td> 
+</tr> 
+<tr> 
+<td colspan="2" style="border-color:#FFFFFF;border-width:0px; margin-left:auto; margin-right:auto"></td> 
+</tr> 
+<tr> 
+<td colspan="2" style="border-color:#FFFFFF"><strong><@CONCEPTOS></strong></td> 
+</tr> 
+</table>
