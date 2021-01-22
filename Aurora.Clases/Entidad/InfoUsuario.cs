@@ -5,7 +5,7 @@ using System.Text;
 using Aurora.Clases.Base.Enums;
 namespace Aurora.Clases.Entidad
 {
-    //representa un usuario
+    //representa un usuario que utiliza el sistema
     [Serializable]
     public class InfoUsuario
     {
